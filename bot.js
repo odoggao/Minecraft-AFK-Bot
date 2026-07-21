@@ -35,19 +35,6 @@ function startBot() {
     movementTimeout = setTimeout(movementCycle, STEP_INTERVAL);
   });
 
-  bot.on('error', (err) => {
-    console.error('⚠️ Error:', err);
-  });
-
-  bot.on('end', () => {
-    console.log('⛔️ Bot Disconnected! Tentando reconectar em 5 segundos...');
-    
-    // Limpa o timer de movimento para o bot antigo não rodar em paralelo
-    if (movementTimeout) clearTimeout(movementTimeout);
-    
-    // Aguarda 5 segundos e cria um novo bot
-    setTimeout(startBot, 5000);
-  });
 }
 
 function movementCycle() {
