@@ -1,14 +1,1 @@
 flask
-discord.py
-openai==2.14.0
-pydantic==2.12.5
-pydantic_core==2.41.5
-firebase-admin
-dotenv
-easy-pil
-cogwatch
-GitPython
-lupa
-aenum
-topggpy
-groq
