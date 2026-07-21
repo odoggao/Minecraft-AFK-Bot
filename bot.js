@@ -23,7 +23,7 @@ bot.on('spawn', () => {
 
   setTimeout(movementCycle, STEP_INTERVAL);
 });
-
+bot.chat('/gamemode 3');
 function movementCycle() {
   if (!bot.entity) return;
 
