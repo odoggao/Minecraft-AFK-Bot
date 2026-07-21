@@ -16,14 +16,15 @@ const STEP_SPEED    = 1;
 const JUMP_DURATION = 500;
 
 bot.on('spawn', () => {
+  bot.chat('/gamemode 3');
   setTimeout(() => {
     bot.setControlState('sneak', true);
     console.log(`✅ ${config.botUsername} is Ready!`);
   }, 3000);
-
+  
   setTimeout(movementCycle, STEP_INTERVAL);
 });
-bot.chat('/gamemode 3');
+
 function movementCycle() {
   if (!bot.entity) return;
 
