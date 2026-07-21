@@ -5,6 +5,7 @@ from flask import Flask
 import os 
 app = Flask(__name__)
 def python_ex(name):
+    subprocess.run(["npm","install", "mineflayer"])
     subprocess.run(["node", name])
 @app.route('/')
 def index():
