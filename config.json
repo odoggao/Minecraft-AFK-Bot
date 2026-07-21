@@ -1,6 +1,6 @@
 {
-  "serverHost": "example.aternos.me",
-  "serverPort": 12345,
-  "botUsername": "MyBot",
+  "serverHost": "manefish.aternos.host",
+  "serverPort": 40021,
+  "botUsername": "JP",
   "botChunk": 1
 }
